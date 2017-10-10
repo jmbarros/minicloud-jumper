@@ -5,28 +5,24 @@
       selinux:
         policy: targeted
         state: permissive
+
     - name: Upgrade all packages
       yum: name='*' state=latest
 
     - name: Installing Application Requiriments
       yum: name={{ item }} state=installed
       with_items:     
- #     - epel-release 
-      - libselinux-python
- #     - python-pip
- #     - python
-      - python-devel
-      - yum-utils 
-      - device-mapper-persistent-data 
-      - lvm2
+        - libselinux-python
+        - python-devel
+        - yum-utils 
 
     - name: Installing Docker CE Repo
       command: yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
       ignore_errors: True
 
-#    - name: Update pip
-#      command: pip install --upgrade pip
-#      ignore_errors: True
+    - name: Update pip
+      command: pip install --upgrade pip
+      ignore_errors: True
 
     - name: Installing Docker CE
       yum: name={{ item }} state=installed
