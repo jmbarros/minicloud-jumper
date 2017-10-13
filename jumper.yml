@@ -14,7 +14,9 @@
       with_items:     
         - libselinux-python
         - python-devel
-        - yum-utils 
+        - yum-utils
+        - device-mapper-persistent-data 
+        - lvm2 
 
     - name: Installing Docker CE Repo
       command: yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
@@ -53,7 +55,3 @@
       command: sysctl -w vm.max_map_count=262144
       ignore_errors: True
 
-#    - name: install container locally 
-#      docker_image:
-#        name: ibmcom/cfc-installer:2.1.0-beta-1
-#      delegate_to: localhost
