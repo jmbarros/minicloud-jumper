@@ -7,7 +7,7 @@
   - proxy01
   
  - into jumper01:
-  - execute: curl -l https://raw.githubusercontent.com/jmbarros/jumper/master/jumper.py | python
+  - execute: curl -l https://raw.githubusercontent.com/jmbarros/minicloud-jumper/master/jumper.py | python
   - edit: inventory file with the hostnames and passwords 
   - execute: python servers/install.py
   
