@@ -8,9 +8,8 @@
   
  - into jumper01:
   - execute: curl -l https://raw.githubusercontent.com/jmbarros/jumper/master/jumper.py | python
-  - execute: ansible-playbook jumper/jumper.yml
   - edit: inventory file with the hostnames and passwords 
-  - execute: python servers/config_prereq.py
+  - execute: python servers/install.py
   
 
   that's it!

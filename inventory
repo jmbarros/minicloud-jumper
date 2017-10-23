@@ -7,9 +7,13 @@ proxy01 ansible_ssh_host=xxxxx ansible_ssh_user=root ansible_ssh_port=22 ansible
 [worker]
 worker01 ansible_ssh_host=xxxxx ansible_ssh_user=root ansible_ssh_port=22 ansible_ssh_pass="xxxx"
 
+[management]
+mng01 ansible_ssh_host=xxxxx ansible_ssh_user=root ansible_ssh_port=22 ansible_ssh_pass="xxxx"
+
 [jumper]
 jumper01 ansible_ssh_host=xxxxx ansible_ssh_user=root ansible_ssh_port=22 ansible_ssh_pass="xxxx"
 
 #[nfs]
-#jumper01 ansible_ssh_host=xxxxx ansible_ssh_user=root ansible_ssh_port=22 ansible_ssh_pass="xxxx"
+#nfs01 ansible_ssh_host=xxxxx ansible_ssh_user=root ansible_ssh_port=22 ansible_ssh_pass="xxxx"
+
 
