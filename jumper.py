@@ -37,6 +37,11 @@ def git ( url ):
    os.system(gt)
    return;
 
+def cmd ( cmdx ):
+   " run"
+   os.system(cmdx)
+   return;
+
 def move ( ori, dest ):
    " coping file "
    pw = "mv " + ori + " " + dest
@@ -48,16 +53,10 @@ def copy ( ori, dest ):
    cpw = "cp -r " + ori + " " + dest
    os.system(cpw)
    return;
-
-def run ( cmd ):
-   "run commands"
-   os.system(cmd)
-   return;
-
  ############
 yum_install("epel-release")
 yum_install("python-setuptools")
-run("easy_install pip")
+yum_install("easy_install pip")
 #yum_install("python-urllib3") 
 yum_install("ansible")
 yum_install("git")
@@ -69,4 +68,4 @@ git("https://github.com/jmbarros/jumper.git")
 git("https://github.com/jmbarros/servers.git")
 play_book("~/jumper/jumper.yml")
 copy("~/jumper/inventory", "~/inventory")
-install_galaxy("jmbarros.icp")
+install_galaxy("jmbarros.minicloud")

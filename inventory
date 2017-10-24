@@ -1,19 +1,2 @@
-[master]
-master01 ansible_ssh_host=xxxxx ansible_ssh_user=root ansible_ssh_port=22 ansible_ssh_pass="xxxxx"
-
-[proxy]
-proxy01 ansible_ssh_host=xxxxx ansible_ssh_user=root ansible_ssh_port=22 ansible_ssh_pass="xxxx"
-
-[worker]
-worker01 ansible_ssh_host=xxxxx ansible_ssh_user=root ansible_ssh_port=22 ansible_ssh_pass="xxxx"
-
-[management]
-mng01 ansible_ssh_host=xxxxx ansible_ssh_user=root ansible_ssh_port=22 ansible_ssh_pass="xxxx"
-
-[jumper]
-jumper01 ansible_ssh_host=xxxxx ansible_ssh_user=root ansible_ssh_port=22 ansible_ssh_pass="xxxx"
-
-#[nfs]
-#nfs01 ansible_ssh_host=xxxxx ansible_ssh_user=root ansible_ssh_port=22 ansible_ssh_pass="xxxx"
-
-
+[minicloud]
+minicloud01 ansible_ssh_host=xxxxx ansible_ssh_user=root ansible_ssh_port=22 ansible_ssh_pass="xxxxx"
