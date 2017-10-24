@@ -56,7 +56,7 @@ def copy ( ori, dest ):
  ############
 yum_install("epel-release")
 yum_install("python-setuptools")
-#yum_install("easy_install pip")
+cmd("easy_install pip")
 #yum_install("python-urllib3") 
 yum_install("ansible")
 yum_install("git")
