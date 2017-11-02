@@ -1,9 +1,4 @@
 #!/usr/bin/python 
-#create inception
-### todo
-# add check slcli file
-#######################################################################
-#defs
 
 import os
 
@@ -57,15 +52,11 @@ def copy ( ori, dest ):
 yum_install("epel-release")
 yum_install("python-setuptools")
 cmd("easy_install pip")
-#yum_install("python-urllib3") 
 yum_install("ansible")
 yum_install("git")
-#yum_install("python-requests")
-#yum_install("pysphere")
-#pip("--upgrade pip")
-#pip("softlayer")
 git("https://github.com/jmbarros/minicloud-jumper.git")
 git("https://github.com/jmbarros/minicloud-servers.git")
+git("https://github.com/jmbarros/minicloud-auto.git")
 play_book("~/minicloud-jumper/jumper.yml")
 copy("~/minicloud-jumper/inventory", "~/inventory")
 install_galaxy("jmbarros.minicloud")
