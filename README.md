@@ -1,4 +1,4 @@
-# How use jumper
+# How to use jumper
 ## Creating servers
 - create 1 servers, for example:
 
