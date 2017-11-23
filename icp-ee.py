@@ -26,5 +26,5 @@ def copy ( ori, dest ):
  ############
 yum_install("wget")
 #use this with you want download ICP-EE for some repo
-#cmd("wget http://172.24.10.78/icp/ibm-cloud-private-x86_64-2.1.0.tar.gz ~/.")
+cmd("wget http://172.24.10.78/icp/ibm-cloud-private-x86_64-2.1.0.tar.gz ~/.")
 cmd("tar -xf ibm-cloud-private-x86_64-2.1.0.tar.gz -O | docker load")
